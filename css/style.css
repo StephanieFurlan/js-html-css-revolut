@@ -1,0 +1,92 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   color: #8B959E;
+}
+
+nav {
+   box-shadow: rgba(25, 28, 31, 0.04) 0px 8px 16px,
+               rgba(25, 28, 31, 0.04) 0px -1px 0px;
+}
+
+.clearfix {
+   display: table;
+   content: "";
+   clear: both;
+}
+
+.centered {
+   width: 75%;
+   margin: 0 auto;
+   height: 80px;
+}
+
+.list-inline li {
+   display: inline-block;
+   list-style: none;
+   line-height: 80px;
+   vertical-align: middle;
+   padding: 0 20px;
+}
+.list-inline li a {
+   text-decoration: none;
+   color: inherit;
+}
+
+
+.nav-left,
+#logo {
+   float: left;
+}
+
+#logo {
+   display: flex;
+   height: 80px;
+   justify-content:center;
+   padding-right: 30px;
+}
+
+.nav-right,
+#buttons {
+   float: right;
+   line-height: 80px;
+}
+
+#login,
+#download {
+   background-color: #edeeef;
+   border-radius: 10px;
+   text-decoration: none;
+}
+
+#login {
+   background-color: #edeeef;
+   color: black;
+   font-weight: 400;
+   margin: 0 20px;
+   padding: 14px 20px;
+}
+#login:hover {
+   background-color: #DADADB;
+}
+
+#download {
+   background-color: #181C1F;
+   color: white;
+   font-weight: 400;
+   padding: 15px 15px;
+}
+#download:hover {
+   background-color: #3D4043;
+}
+
+#bold {
+   font-weight: 400;
+   color: black;
+}
