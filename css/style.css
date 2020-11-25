@@ -8,6 +8,7 @@ body {
    font-family: 'Roboto', sans-serif;
    font-weight: 300;
    color: #8B959E;
+   width: 100%;
 }
 
 nav {
@@ -27,37 +28,67 @@ nav {
    height: 80px;
 }
 
-.list-inline li {
-   display: inline-block;
-   list-style: none;
+.list-inline {
    line-height: 80px;
    vertical-align: middle;
-   padding: 0 20px;
 }
-.list-inline li a {
+.list-inline a {
    text-decoration: none;
    color: inherit;
+   padding: 0 20px;
 }
 
+.list-inline a:hover {
+   color: black;
+}
 
-.nav-left,
-#logo {
+.nav-left {
    float: left;
 }
 
+.nav-right {
+   float: right;
+}
+
+.nav-right__el {
+   display: inline-block;
+   position: relative;
+}
+
+.dropdown {
+   background-color: white;
+   display: none;
+   min-width: 180px;
+   line-height: 40px;
+   list-style: none;
+   border-radius: 5px;
+   position: absolute;
+   left: 0;
+   top: 70px;
+   box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px,
+               rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+   padding: 20px;
+}
+
+.dropdown a {
+   padding: 0;
+}
 #logo {
+   float: left;
    display: flex;
    height: 80px;
    justify-content:center;
    padding-right: 30px;
 }
 
-.nav-right,
+
+
 #buttons {
    float: right;
    line-height: 80px;
 }
 
+/* BUTTONS ON NAV-BAR */
 #login,
 #download {
    background-color: #edeeef;

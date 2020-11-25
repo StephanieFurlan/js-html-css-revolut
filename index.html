@@ -6,8 +6,9 @@
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="css/style.css">
-      <script src="js/main.js" charset="utf-8"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="js/main.js" charset="utf-8"></script>
+
    </head>
    <body>
       <nav>
@@ -15,21 +16,91 @@
             <div id="logo">
                <img src="img/logo.svg" alt="">
             </div>
-            <ul class="list-inline nav-left">
-               <li><a id="bold" href="#">Personale</a></li>
-               <li><a href="#">Business</a></li>
-            </ul>
+            <div class="list-inline nav-left">
+               <a id="bold" href="#">Personale</a>
+               <a href="#">Business</a>
+            </div>
             <div id="buttons">
-               <a href="#" id="login">Accedi</a>
+               <a id="login" href="#">Accedi</a>
                <a id="download" href="#">Scarica l'app</a>
             </div>
-            <ul class="list-inline nav-right">
-               <li><a href="#">Funzionalità</a></li>
-               <li><a href="#">Abbonamenti</a></li>
-               <li><a href="#">Chi siamo</a></li>
-               <li><a href="#">Aiuto</a></li>
-            </ul>
-
+            <div class="list-inline nav-right">
+               <div class="nav-right__el">
+                  <a href="#">Funzionalità</a>
+                  <div class="dropdown ">
+                     hi
+                  </div>
+               </div>
+               <div class="nav-right__el">
+                  <a href="#">Abbonamenti</a>
+                  <ul class="dropdown">
+                     <li>
+                        <a href="">Standard</a>
+                     </li>
+                     <li>
+                        <a href="">Premium</a>
+                     </li>
+                     <li>
+                        <a href="">Metal</a>
+                     </li>
+                     <li>
+                        <a href="">Confronta i piani</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="nav-right__el">
+                  <a href="#">Chi siamo</a>
+                  <ul class="dropdown">
+                     <li>
+                        <a href="">Chi siamo</a>
+                     </li>
+                     <li>
+                        <a href="">Blog</a>
+                     </li>
+                     <li>
+                        <a href="">Leadership</a>
+                     </li>
+                     <li>
+                        <a href="">Affiliate</a>
+                     </li>
+                     <li>
+                        <a href="">Influencer</a>
+                     </li>
+                     <li>
+                        <a href="">Lavora con noi</a>
+                     </li>
+                     <li>
+                        <a href="">Cultura</a>
+                     </li>
+                     <li>
+                        <a href="">Diversità e inclusione</a>
+                     </li>
+                     <li>
+                        <a href="">Contatto</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="nav-right__el">
+                  <a href="#">Aiuto</a>
+                  <ul class="dropdown">
+                     <li>
+                        <a href="">Centro assistenza</a>
+                     </li>
+                     <li>
+                        <a href="">Community</a>
+                     </li>
+                     <li>
+                        <a href="">Sicurezza</a>
+                     </li>
+                     <li>
+                        <a href="">Stato del sistema</a>
+                     </li>
+                     <li>
+                        <a href="">API sviluppatore</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
          </div>
       </nav>
 
