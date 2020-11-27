@@ -1,19 +1,33 @@
 * {
    box-sizing: border-box;
-   margin: 0;
    padding: 0;
+   margin: 0;
 }
 
 body {
    font-family: 'Roboto', sans-serif;
    font-weight: 300;
    color: #8B959E;
-   width: 100%;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+a:hover {
+   color: black;
+}
+
+ul {
+   list-style-type: none;
 }
 
 nav {
+   height: 80px;
    box-shadow: rgba(25, 28, 31, 0.04) 0px 8px 16px,
                rgba(25, 28, 31, 0.04) 0px -1px 0px;
+
 }
 
 .clearfix {
@@ -28,51 +42,6 @@ nav {
    height: 80px;
 }
 
-.list-inline {
-   line-height: 80px;
-   vertical-align: middle;
-}
-.list-inline a {
-   text-decoration: none;
-   color: inherit;
-   padding: 0 20px;
-}
-
-.list-inline a:hover {
-   color: black;
-}
-
-.nav-left {
-   float: left;
-}
-
-.nav-right {
-   float: right;
-}
-
-.nav-right__el {
-   display: inline-block;
-   position: relative;
-}
-
-.dropdown {
-   background-color: white;
-   display: none;
-   min-width: 180px;
-   line-height: 40px;
-   list-style: none;
-   border-radius: 5px;
-   position: absolute;
-   left: 0;
-   top: 70px;
-   box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px,
-               rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
-   padding: 20px;
-}
-
-.dropdown a {
-   padding: 0;
-}
 #logo {
    float: left;
    display: flex;
@@ -81,14 +50,42 @@ nav {
    padding-right: 30px;
 }
 
+#left-menu {
+   float: left;
+   line-height: 80px;
+   vertical-align: middle;
+}
 
+#left-menu > a {
+   padding: 0 20px;
+}
+
+.active {
+   font-weight: bold;
+   color: black;
+}
+
+#right-menu {
+   float: right;
+}
+
+#right-menu > li > a {
+   line-height: 80px;
+   vertical-align: middle;
+}
+
+#right-menu > li {
+   display: inline-block;
+   position: relative;
+   padding: 0 20px;
+}
 
 #buttons {
    float: right;
    line-height: 80px;
 }
 
-/* BUTTONS ON NAV-BAR */
+
 #login,
 #download {
    background-color: #edeeef;
@@ -117,7 +114,51 @@ nav {
    background-color: #3D4043;
 }
 
-#bold {
-   font-weight: 400;
-   color: black;
+.dropdown-content {
+   display: none;
+   position: absolute;
+   left: 0;
+   top: 70px;
+   background-color: white;
+   border-radius: 10px;
+   padding: 20px;
+   box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px,
+               rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+   white-space: nowrap;
+   /* width: max-content; */
+}
+
+.dropdown-content li {
+   line-height: 50px;
+}
+
+.special {
+   display: flex;
+}
+
+.special > ul {
+   margin-right: 60px;
+}
+
+.special > ul li:first-child {
+   font-weight: bold;
+   font-size: 12px;
+}
+
+.to-add > a {
+   position: relative;
+   color: lightgray;
+}
+
+.to-add a span {
+   position: absolute;
+   color: blue;
+   font-size: 12px;
+   left: 100%;
+   top: -5px;
+   line-height: 0px;
+}
+
+#funzionalita {
+   left: -250%;
 }

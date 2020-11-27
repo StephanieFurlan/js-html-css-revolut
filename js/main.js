@@ -1,13 +1,10 @@
 $(document).ready(function() {
-   console.log("ho");
 
-   $(".nav-right__el").mouseenter(function(){
-
-      $(this).find(".dropdown").show();
+   $("#right-menu > li").mouseenter(function(){
+      $(this).find(".dropdown-content").show();
    });
 
-   $(".nav-right__el").mouseleave(function(){
-
-      $(this).find(".dropdown").hide();
+   $("#right-menu > li").mouseleave(function(){
+      $(this).find(".dropdown-content").hide();
    });
 });
